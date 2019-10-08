@@ -1,0 +1,6 @@
+- After slide 12 open code editor and show:
+	- 2 ways to import Landsat 8 Tier 1 Surface Reflectance:
+		1) Type 'Landsat 8 Tier 1' into Search bar and import - just the collection
+		2) Import from Data Catalog but update to Corvallis -123, 44.5 map.setCenter
+
+- To Demo Reduce, show examples > Clipped Composite, update Tiger to Counties and 'Benton' and 'Linn'
