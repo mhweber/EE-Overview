@@ -9,16 +9,17 @@ output: slidy_presentation
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+##
+
+```{r, echo=FALSE, fig.align='center', out.width="1200px"}
+   knitr::include_graphics('./GroupPhoto.jpg')
+```
+
 ## Agenda
 
 ```{r, echo=FALSE, fig.align='center', out.width="1200px"}
    knitr::include_graphics('./Agenda1.png')
 ```
-
-## Earth Engine - An Introduction
-
-- [Intro Video](https://earthengine.google.com)
-
 
 ## Earth Engine Motivation
 
@@ -36,16 +37,77 @@ knitr::opts_chunk$set(echo = FALSE)
    knitr::include_graphics('./Image2.png')
 ```
 
-## Earth Engine Motivation
+## What Is Earth Engine?
+
+Groelick et al. (2017) in ['Google Earth Engine: Planetory-scale geospatial analysis for everyone' in *Remote Sensing of the Environment*](https://www.sciencedirect.com/science/article/pii/S0034425717302900):
+
+> "Google Earth Engine is a cloud-based platform for planetary-scale geospatial analysis that brings Google’s massive computational capabilities to bear on a variety of high-impact societal issues including deforestation, drought, disaster, disease, food security, water management, climate monitoring and environmental protection."
+
+## Why Use Earth Engine?
 
 - Petabytes and petabytes of Earth observation data being collected
-- Global-scale problems requiring analysis of increasingly larger and more complex geospatial data
+- Planetary Science: global-scale problems requiring analysis of increasingly larger and more complex geospatial data
+ - A number of ground-breaking studies and papers have come out in recent years leveraging the power of large-scale computing in GEE on environmental and social problems
+ 
+## Why Use Earth Engine?
 
-```{r, echo=FALSE, fig.align='center', out.width="800px", fig.cap='Image source: NASA public domain'}
-   knitr::include_graphics('./NASA_Satelites.png')
+Motivating Case Studies:
+
+- [Global Forest Watch](http://www.globalforestwatch.org/)
+Online platform to interactively show forest gain / loss at global scale
+   + [Hansen et al (2013) Publication on the data](http://science.sciencemag.org/content/342/6160/850)
+   + [GEE tutorial using the Hansen data](https://developers.google.com/earth-engine/tutorial_forest_01)
+   
+```{r, echo=FALSE, fig.align='center', out.width="800px", fig.cap='Deforestation in Paraguay 2000-2012'}
+   knitr::include_graphics('https://www.moore.org/images/default-source/grants/other-grant-images/.gif?sfvrsn=32ed920d_2')
 ```
 
-## Agenda
+## Why Use Earth Engine?
+
+Motivating Case Studies:
+
+- [Global Surface Water Paper in Nature (Pekel at al 2017)](https://www.nature.com/articles/nature20584)
+Global mapping of water loss and gain since 1984 for larger waterbodies
+   + [Global Surface Water Data Explorer](https://global-surface-water.appspot.com/)
+   + [GEE tutorial using the Pekel data](https://geohackweek.github.io/GoogleEarthEngine/01-introduction/)
+   + [Data Users Guide](https://storage.googleapis.com/global-surface-water/downloads_ancillary/DataUsersGuidev2.pdf)
+
+## Why Use Earth Engine?
+
+Motivating Case Studies:
+
+- [Global Travel Times](https://map.ox.ac.uk/research-project/accessibility_to_cities/)
+A map of travel times from any point in world to the nearest urban center produced by Oxford Malariea Atlas Project, EU Joint Research Center, and University of Twente. Shows areas with limited access to services for public health / policy decisions
+   + [Original paper in Nature (Weiss et al 2018)](https://www.nature.com/articles/nature25181)
+   + [Example EE script for visualizing the data](https://code.earthengine.google.com/d52c656d3098b2723b275cc0d113d05e)
+   
+## Why Use Earth Engine?
+
+- Cloud-based, parallelized geospatial analysis (server-side analysis)
+- Google Earth Engine takes care of the infrastructure and paralellization implementation - traditionally a big big bottleneck!
+- Apply a huge number of functions developed for computaiton in Earth Engine and apply to massive amount of images simultaneously using GEE infrastructure
+   + No need to download / analyze individual tiles and deal with local storage issues
+- **Massive** Public Data Catalog (29 petabytes) - largest analysis-ready dataset in the world
+   + ~ 1 Petabyte/month being added
+   + Over 6000 datasets
+   + ~ 100 datasets / year added
+   + You can request data, and you can upload your own data!
+   
+## How does it work?
+
+- Using browser-based code editor, write commands that are sent as object to Google for processing in parallel in the cloud (server-side)
+- You visualize results (maps, charts, statistics) from Google in the browser (client-side)
+- Using API:
+   + Filter massive collections of images to certain times or areas-of-interest (AOI)
+   + Map algorithms over entire collections of images or features
+   + Apply algorithms to individual images or features
+   + Compute aggregate statistics through time / space without any download to your machine
+   
+```{r, echo=FALSE, fig.align='center', out.width="800px"}
+   knitr::include_graphics('./EE_Client_Server.png')
+```  
+
+## Earth Engine Fundamentals 
 
 ```{r, echo=FALSE, fig.align='center', out.width="1200px"}
    knitr::include_graphics('./Agenda2.png')
@@ -110,11 +172,12 @@ Earth Engine Objects:
       + Name
       + CRS / Projection
       + Scale
-   * Properites, at a minimum:
+   * Properties, at a minimum:
       + Date
       + Bounding box
       + Unique ID
-      
+ 
+   * [Code Editor Sample](https://code.earthengine.google.com/83880155a74987232b52a4ff587bf10b)     
 </div>
 
 <div class='right' style='float:right;width:48%'>
@@ -136,6 +199,7 @@ Earth Engine Objects:
    * Properties (Same as images)
    * Features have geomtry property and a 'properties' property
       + 'properties' property just a dictionary for each feature
+   * [Code Editor Sample](https://code.earthengine.google.com/d98c4f16ddcc390c788efa06dcad8983)   
 </div>
 
 <div class='right' style='float:right;width:48%'>
@@ -156,9 +220,40 @@ Collections
 - Take a minute to scroll through the [EE Data Catalog](https://developers.google.com/earth-engine/datasets)
    + You'll notice most datasets you check are image or feature collections
 
-## Earth Engine Fundamentals
-Filtering, Mapping and Reducing
--  
+## Earth Engine Programming
+```{r, echo=FALSE, fig.align='center', out.width="1200px"}
+   knitr::include_graphics('./Agenda3.png')
+```
+
+## Earth Engine Programming
+What do we do with collections?
+
+- Filtering
+   + Select images / features meeting criteria
+- Mapping
+   + Apply a function to every image / feature in collection
+- Reducing
+   + Aggregate / Composite images and features 
+      * i.e. mean / max of images, sum / mean of feature column
+- Control flows a no-no in EE
+   + No for loops, conditionals - 
+
+## Earth Engine Programming
+
+Filtering
+
+- [Filtering A FeatureCollection using metadata](https://code.earthengine.google.com/17a1342fdadf5c776508107f5b73dcb0) 
+
+-[Filting An ImageCollection using space and time](https://code.earthengine.google.com/e0ee9b72f6656305784fb549629f5e9d)
+
+## Earth Engine Programming
+
+Mapping
+
+- [Map a function over a FeatureCollection](https://code.earthengine.google.com/d952902a63ecd14cf78c77a92ea56df5) 
+
+-[Map a function over an ImageCollection](https://code.earthengine.google.com/02f975b5d797256f179e7f737e96aabc)
+
 
 ## Earth Engine Fundamentals
 Lazy Eval and Batch Processing
@@ -168,8 +263,29 @@ Lazy Eval and Batch Processing
      
 ## Map and Reduce Operations
 
+
+## Next Steps in EE Programming
+
+Treasure trove of documentation and examples in the [Developer's Guide](https://developers.google.com/earth-engine/getstarted):
+
+- Machine Learning Approaches
+   * Developing TensorFlow models in EE
+   * Supervised and Unsupervised classifications
+- Image Processing
+   * Spectral Transformations
+   * Edge Detection
+   * Morphological Operations (i.e. focal_min, focal_max)
+- More on Reducers (weighted reductions, linear regression, etc)
+- Joins
+- Charting
+- Array operations
+
 ## Python API
 
 ## Personal and public assets
 - [Requests](https://developers.google.com/earth-engine/help#dataset-requests)
 
+## Resources
+
+- [Earth Engine Developer pages](https://developers.google.com/earth-engine/) 
+- [Geohackweek Earth Engine tutorial series](https://geohackweek.github.io/GoogleEarthEngine/)
