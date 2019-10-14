@@ -48,14 +48,18 @@ Groelick et al. (2017) in ['Google Earth Engine: Planetory-scale geospatial anal
 - Petabytes and petabytes of Earth observation data being collected
 - Planetary Science: global-scale problems requiring analysis of increasingly larger and more complex geospatial data
  - A number of ground-breaking studies and papers have come out in recent years leveraging the power of large-scale computing in GEE on environmental and social problems
- 
+
+```{r, echo=FALSE, fig.align='center', out.width="1600px"}
+   knitr::include_graphics('./GlobalProblems.png')
+```
+
 ## Why Use Earth Engine?
 
 Motivating Case Studies:
 
 - [Global Forest Watch](http://www.globalforestwatch.org/)
 Online platform to interactively show forest gain / loss at global scale
-   + [Hansen et al (2013) Publication on the data](http://science.sciencemag.org/content/342/6160/850)
+   + [Hansen et al (2013) Paper in Science](http://science.sciencemag.org/content/342/6160/850)
    + [GEE tutorial using the Hansen data](https://developers.google.com/earth-engine/tutorial_forest_01)
    
 ```{r, echo=FALSE, fig.align='center', out.width="800px", fig.cap='Deforestation in Paraguay 2000-2012'}
@@ -254,15 +258,15 @@ Mapping
 
 -[Map a function over an ImageCollection](https://code.earthengine.google.com/02f975b5d797256f179e7f737e96aabc)
 
+## Earth Engine Programming
 
-## Earth Engine Fundamentals
+Reducers
+
+## Earth Engine Programming
 Lazy Eval and Batch Processing
 
 - Results only derived when and where needed
      * i.e. in map window for display; as result of print statement
-     
-## Map and Reduce Operations
-
 
 ## Next Steps in EE Programming
 
@@ -281,6 +285,42 @@ Treasure trove of documentation and examples in the [Developer's Guide](https://
 - Array operations
 
 ## Python API
+Why Python and not just stick to the Javascript Code Editor?
+
+```{r, echo=FALSE, fig.align='center', out.height="500px", out.width="400px",fig.cap='Source: https://xkcd.com/353'}
+   knitr::include_graphics('./PythonFlying.png')
+```
+
+## Python API
+```{r, echo=FALSE, fig.align='center', out.width="1200px",fig.cap='Source: Tyler Erickson Geo4Good Earth Engine Python API slidedeck'}
+   knitr::include_graphics('./PythonAPI_Image1.png')
+```
+
+## Python API
+```{r, echo=FALSE, fig.align='center', out.width="1600px",fig.cap='Source: Tyler Erickson Geo4Good Earth Engine Python API slidedeck'}
+   knitr::include_graphics('./PythonAPI_Image2.png')
+```
+
+## Python API
+Environments for running the EE Python API
+
+
+## Earth Engine Apps
+
+- EE Apps are way to share an analysis or workflow and simple way to publish work
+- [Example EE Apps](https://www.earthengine.app/)
+- We *build* apps in the code editor and add *User Interface (UI)* widgets
+   * Widgets:
+      + Let users input parameters or interact with your script
+      + Display information (labels, charts, thumbnails)
+- Example 1: [Zoom Box of Night Light Trends](https://mweber36.users.earthengine.app/view/zoombox)
+- Example 2: [NDVI Explorer](https://mweber36.users.earthengine.app/view/ndvi-explorer)
+
+## New Developments
+Big Query
+
+## New Developments
+TensorFlow Model Object
 
 ## Personal and public assets
 - [Requests](https://developers.google.com/earth-engine/help#dataset-requests)
