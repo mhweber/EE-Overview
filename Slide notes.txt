@@ -1,23 +1,24 @@
 - Slide 2
 	Just for back story, Google has been doing Earth Engine summits for about 8 years now I think, as well as Geo for Good summits - this year for 
 	first time they combined the two - about 800 people from all over the world at Google headquarters
-	I'd applied previously and been rejected, and was rejected again, but this year they opened up 2 slots from the EPA, and just 3 EPA employees had applied -
-	Mike, Nate Merrill who's on the line, and myself.  Mike was gracious enough to give his spot to me, so next year Mike should definitely go
+	I'd applied previously and been rejected, and was rejected again, but this year they opened up 2 slots from the EPA, and just 3 EPA employees had 
+	applied - Mike, Nate Merrill who's on the line, and myself.  Mike was gracious enough to give his spot to me, so next year Mike should definitely go
 
  Slide 3
-	My plan is to give a bit of background on Earth Engine, then give a brief overview of Earth Engine functionality, move into some actual code examples of how
-	to use Earth Engine, and then show some example simple applications - Nate is going to give an overview of some full fledged applications he's developed after
-	that.  If we have time, can have discussion or anyone else is free to talk about work they're doing with EE.  Feel free to ask questions as we go.
+	My plan is to give a bit of background on Earth Engine, then give a brief overview of Earth Engine functionality, move into some actual code 
+	examples of how to use Earth Engine, and then show some example simple applications - Nate is going to give an overview of some full fledged 
+	applications he's developed after that.  If we have time, can have discussion or anyone else is free to talk about work they're doing with EE.  
+	Feel free to ask questions as we go.
 
 Slide 4
 	Researchers working with remote sensing traditionally have had to spend a huge amount of time on 'IT' work in comparison with actual analysis
-	One of the biggest motivations and benefits of Earth Engine is providing a mechanism to vastly improve this ratio so that more time is spent on analysis
-	and not sweating the details of downloading data, coordinating file formats, cloud and atmospheric correction, etc
+	One of the biggest motivations and benefits of Earth Engine is providing a mechanism to vastly improve this ratio so that more time is spent on 
+	analysis and not sweating the details of downloading data, coordinating file formats, cloud and atmospheric correction, etc
 	
 Slide 5
-	Earth Engine operates on the premise of what I would say is a bit of a paradigm shift - rather than worrying about downloading data, move the analysis to the data
-	Earth Engine is hosting massive troves of remote sensing data in their catalog and it allows you to process against this catalog of data by distributing your analysis
-	across CPUs server side
+	Earth Engine operates on the premise of what I would say is a bit of a paradigm shift - rather than worrying about downloading data, move the 
+	analysis to the data Earth Engine is hosting massive troves of remote sensing data in their catalog and it allows you to process against this 
+	catalog of data by distributing your analysis across CPUs server side
 
 
 - Slide 22

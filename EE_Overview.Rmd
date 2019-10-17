@@ -271,10 +271,9 @@ Reducers
 ## Earth Engine Programming
 Compositing and Mosaicking
 
-- [Compositing](https://code.earthengine.google.com/f3ab6c759f996eed25f9b2e88ebcb7d5)
->>>>>>> 503f56111db5a430e11dcb722f9ce85a8471d22f
+- [Composite NAIP images over time](https://code.earthengine.google.com/f3ab6c759f996eed25f9b2e88ebcb7d5)
 
-- [Mosaicking](https://code.earthengine.google.com/ddb18b15939898968e60e3fa4bcd6f62)
+- [Mosaicking NAIP images](https://code.earthengine.google.com/ddb18b15939898968e60e3fa4bcd6f62)
 
 
 ## Earth Engine Programming
