@@ -266,6 +266,8 @@ Reducers
 
 - [Example Image Reduction of monthly precip from PRISM](https://code.earthengine.google.com/d995de187124b81ed839fe326fb856f4)
 
+- [Image statistics by regions (i.e. zonal statistics)](https://code.earthengine.google.com/782cd752d90155ca11b661f4b4cbbf77)
+
 ## Earth Engine Programming
 Compositing and Mosaicking
 
@@ -280,12 +282,14 @@ Compositing and Mosaicking
 Important take-homes for programming in EE:
 
 - Earth Engine uses defered execution (lazy evaluation)
-   +
-- and Batch Processing
-
-- Results only derived when and where needed
-     * i.e. in map window for display; as result of print statement
-
+   + Results only derived when and where needed
+      * i.e. in map window for display; as result of print statement
+- Batch Processing
+   + Operations in the code editor time out after 1 minute - that's all you get
+   + Operations submitted in batch you get up to 1 week of processing time!
+      * You set up a batch process by setting up an export task in your code
+   + [Example Region Reduction and export of results](https://code.earthengine.google.com/782cd752d90155ca11b661f4b4cbbf77)
+     
 ## Next Steps in EE Programming
 
 Treasure trove of documentation and examples in the [Developer's Guide](https://developers.google.com/earth-engine/getstarted):
@@ -324,16 +328,27 @@ Environments for running the EE Python API:
 
 - [conda](https://conda.io/en/latest/)
    * This is how I've been using so far - good for running EE API conda on local computer, simple install
+   
 - [Google Colab](https://colab.research.google.com/notebooks/welcome.ipynb#recent=true)
    * hosted notebook environment (in the cloud), easy to install EE API and run Python code right away
    * For those used to Jupyter Notebooks, this is a hosted Jupyter Notebook that integrates Google Drive and GitHub
+   
 - [JupyterLab]
+
+## Python API
+
+- [Example of using Python API in Google Colab](https://colab.research.google.com/drive/1YC-oXAoaiZy6EjJ8gr3u6gRP8mzH4qqx)
 
 ## Python API
 Should I use EE Code Editor or Python, and if Python what environment?
 
 ```{r, echo=FALSE, fig.align='center', out.width="1000px",fig.cap='Source: Tyler Erickson Geo4Good Earth Engine Python API slidedeck'}
    knitr::include_graphics('./CodeEditorOrPython.png')
+```
+
+## Earth Engine Programming
+```{r, echo=FALSE, fig.align='center', out.width="1200px"}
+   knitr::include_graphics('./Agenda4.png')
 ```
 
 ## Earth Engine Apps
@@ -348,10 +363,21 @@ Should I use EE Code Editor or Python, and if Python what environment?
 - Example 2: [NDVI Explorer](https://mweber36.users.earthengine.app/view/ndvi-explorer)
 
 ## New Developments
-Big Query
 
-## New Developments
-TensorFlow Model Object
+- [Big Query GIS](https://cloud.google.com/bigquery/docs/gis-intro)
+   * Allows you to analyze massive vector GIS data and attribute data via SQL in Google Big Query
+   
+- [TensorFlow Object Model](https://developers.google.com/earth-engine/tensorflow)
+
+- [Early Access Rest API](https://docs.google.com/presentation/d/1vQynmRLKwE8o2DTVa5CuiyCyDNZul_w0dQP9M1IF6Mw/edit#slide=id.g5d4a909b46_1_18)
+   * EE computation and use the EE catalog from any language via an HTTP API - have to request to be whitelisted
+
+
+
+
+
+
+
 
 ## Personal and public assets
 - [Requests](https://developers.google.com/earth-engine/help#dataset-requests)
@@ -360,3 +386,4 @@ TensorFlow Model Object
 
 - [Earth Engine Developer pages](https://developers.google.com/earth-engine/) 
 - [Geohackweek Earth Engine tutorial series](https://geohackweek.github.io/GoogleEarthEngine/)
+- [GeoforGood 2019 Breakout Sessions](https://sites.google.com/earthoutreach.org/geoforgood19/agenda/breakout-sessions)

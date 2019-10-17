@@ -1,0 +1,8 @@
+Take-aways from EE Summit:
+
+- Geo for Good / EE Summit has been going I think for about 8 years now, first time combining the two into one event
+- Lots of concurrent sessions; I followed kind of a deep dive into nuts and bolts of using Earth Engine
+- Sessions on Mapping and Collections, Reducers, Import Export, the Python API, basic EE data structures, building EE Apps
+- Conference was Geo for Good so many keynotes, sessions, lightning talks not just on EE but on other Google Geo products and applications
+- Some of the new interesting stuff was BigQuery GIS and the relearse of the TensorFlow object in EE, as well as the new Early Access Rest API - 
+	have to request to be whitelisted to use, but allows you to do EE computation and use the EE catalog from any language via an HTTP API
