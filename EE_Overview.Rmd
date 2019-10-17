@@ -107,7 +107,7 @@ A map of travel times from any point in world to the nearest urban center produc
    + Apply algorithms to individual images or features
    + Compute aggregate statistics through time / space without any download to your machine
    
-```{r, echo=FALSE, fig.align='center', out.width="800px"}
+```{r, echo=FALSE, fig.align='center', out.height=="400px"}
    knitr::include_graphics('./EE_Client_Server.png')
 ```  
 
@@ -155,7 +155,7 @@ You'll need to sign up for an [Earth Engine account](http://signup.earthengine.g
 
 ## Earth Engine Fundamentals
 
-```{r, echo=FALSE, fig.align='center', out.width="1200px",fig.cap='Image source: https://developers.google.com/earth-engine/playground'}
+```{r, echo=FALSE, fig.align='center', out.width="800px",fig.cap='Image source: https://developers.google.com/earth-engine/playground'}
    knitr::include_graphics('./CodeEditor.png')
 ```
 
@@ -273,8 +273,6 @@ Compositing and Mosaicking
 
 -[Compositing](https://code.earthengine.google.com/f3ab6c759f996eed25f9b2e88ebcb7d5)
 
-## Earth Engine Programming
-
 - [Mosaicking](https://code.earthengine.google.com/ddb18b15939898968e60e3fa4bcd6f62)
 
 
@@ -314,12 +312,12 @@ Why Python and not just stick to the Javascript Code Editor?
 ```
 
 ## Python API
-```{r, echo=FALSE, fig.align='center', out.width="1200px",fig.cap='Source: Tyler Erickson Geo4Good Earth Engine Python API slidedeck'}
+```{r, echo=FALSE, fig.align='center', out.width="800px",fig.cap='Source: Tyler Erickson Geo4Good Earth Engine Python API slidedeck'}
    knitr::include_graphics('./PythonAPI_Image1.png')
 ```
 
 ## Python API
-```{r, echo=FALSE, fig.align='center', out.width="1600px",fig.cap='Source: Tyler Erickson Geo4Good Earth Engine Python API slidedeck'}
+```{r, echo=FALSE, fig.align='center', out.width="800px",fig.cap='Source: Tyler Erickson Geo4Good Earth Engine Python API slidedeck'}
    knitr::include_graphics('./PythonAPI_Image2.png')
 ```
 
@@ -342,7 +340,7 @@ Environments for running the EE Python API:
 ## Python API
 Should I use EE Code Editor or Python, and if Python what environment?
 
-```{r, echo=FALSE, fig.align='center', out.width="1000px",fig.cap='Source: Tyler Erickson Geo4Good Earth Engine Python API slidedeck'}
+```{r, echo=FALSE, fig.align='center', out.width="800px",fig.cap='Source: Tyler Erickson Geo4Good Earth Engine Python API slidedeck'}
    knitr::include_graphics('./CodeEditorOrPython.png')
 ```
 
