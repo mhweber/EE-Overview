@@ -111,7 +111,7 @@ A map of travel times from any point in world to the nearest urban center produc
    knitr::include_graphics('./EE_Client_Server.png')
 ```  
 
-## Earth Engine Fundamentals 
+## Agenda 
 
 ```{r, echo=FALSE, fig.align='center', out.width="1200px"}
    knitr::include_graphics('./Agenda2.png')
@@ -221,10 +221,10 @@ Collections
 - Collections are typically what you encounter in the wild in EE
 - They are unmodifiable, homogenous lists
 - Both features and  images come as FeatureCollections or ImageCollections
-- Take a minute to scroll through the [EE Data Catalog](https://developers.google.com/earth-engine/datasets)
+- You can find and load datasets by searching through the [EE Data Catalog](https://developers.google.com/earth-engine/datasets) or by using the search window in the [Code Editor](https://code.earthengine.google.com/)
    + You'll notice most datasets you check are image or feature collections
 
-## Earth Engine Programming
+## Agenda
 ```{r, echo=FALSE, fig.align='center', out.width="1200px"}
    knitr::include_graphics('./Agenda3.png')
 ```
@@ -251,7 +251,7 @@ Filtering
 
 - [Filtering A FeatureCollection using metadata](https://code.earthengine.google.com/17a1342fdadf5c776508107f5b73dcb0) 
 
--[Filting An ImageCollection using space and time](https://code.earthengine.google.com/e0ee9b72f6656305784fb549629f5e9d)
+- [Filting An ImageCollection using space and time](https://code.earthengine.google.com/e0ee9b72f6656305784fb549629f5e9d)
 
 ## Earth Engine Programming
 
@@ -271,9 +271,7 @@ Reducers
 ## Earth Engine Programming
 Compositing and Mosaicking
 
--[Compositing](https://code.earthengine.google.com/f3ab6c759f996eed25f9b2e88ebcb7d5)
-
-## Earth Engine Programming
+- [Compositing](https://code.earthengine.google.com/f3ab6c759f996eed25f9b2e88ebcb7d5)
 
 - [Mosaicking](https://code.earthengine.google.com/ddb18b15939898968e60e3fa4bcd6f62)
 
@@ -289,22 +287,6 @@ Important take-homes for programming in EE:
    + Operations submitted in batch you get up to 1 week of processing time!
       * You set up a batch process by setting up an export task in your code
    + [Example Region Reduction and export of results](https://code.earthengine.google.com/782cd752d90155ca11b661f4b4cbbf77)
-     
-## Next Steps in EE Programming
-
-Treasure trove of documentation and examples in the [Developer's Guide](https://developers.google.com/earth-engine/getstarted):
-
-- Machine Learning Approaches
-   * Developing TensorFlow models in EE
-   * Supervised and Unsupervised classifications
-- Image Processing
-   * Spectral Transformations
-   * Edge Detection
-   * Morphological Operations (i.e. focal_min, focal_max)
-- More on Reducers (weighted reductions, linear regression, etc)
-- Joins
-- Charting
-- Array operations
 
 ## Python API
 Why Python and not just stick to the Javascript Code Editor?
@@ -346,7 +328,23 @@ Should I use EE Code Editor or Python, and if Python what environment?
    knitr::include_graphics('./CodeEditorOrPython.png')
 ```
 
-## Earth Engine Programming
+## Next Steps in EE Programming
+
+Treasure trove of documentation and examples in the [Developer's Guide](https://developers.google.com/earth-engine/getstarted):
+
+- Machine Learning Approaches
+   * Developing TensorFlow models in EE
+   * Supervised and Unsupervised classifications
+- Image Processing
+   * Spectral Transformations
+   * Edge Detection
+   * Morphological Operations (i.e. focal_min, focal_max)
+- More on Reducers (weighted reductions, linear regression, etc)
+- Joins
+- Charting
+- Array operations
+
+## Agenda
 ```{r, echo=FALSE, fig.align='center', out.width="1200px"}
    knitr::include_graphics('./Agenda4.png')
 ```
@@ -372,13 +370,6 @@ Should I use EE Code Editor or Python, and if Python what environment?
 - [Early Access Rest API](https://docs.google.com/presentation/d/1vQynmRLKwE8o2DTVa5CuiyCyDNZul_w0dQP9M1IF6Mw/edit#slide=id.g5d4a909b46_1_18)
    * EE computation and use the EE catalog from any language via an HTTP API - have to request to be whitelisted
 
-
-
-
-
-
-
-
 ## Personal and public assets
 - [Requests](https://developers.google.com/earth-engine/help#dataset-requests)
 
@@ -387,3 +378,4 @@ Should I use EE Code Editor or Python, and if Python what environment?
 - [Earth Engine Developer pages](https://developers.google.com/earth-engine/) 
 - [Geohackweek Earth Engine tutorial series](https://geohackweek.github.io/GoogleEarthEngine/)
 - [GeoforGood 2019 Breakout Sessions](https://sites.google.com/earthoutreach.org/geoforgood19/agenda/breakout-sessions)
+- [EE Tutorials on Developer Pages](https://developers.google.com/earth-engine/tutorials)
