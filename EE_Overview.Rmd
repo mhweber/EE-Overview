@@ -62,7 +62,7 @@ Online platform to interactively show forest gain / loss at global scale
    + [Hansen et al (2013) Paper in Science](http://science.sciencemag.org/content/342/6160/850)
    + [GEE tutorial using the Hansen data](https://developers.google.com/earth-engine/tutorial_forest_01)
    
-```{r, echo=FALSE, fig.align='center', out.width="800px", fig.cap='Deforestation in Paraguay 2000-2012'}
+```{r, echo=FALSE, fig.align='center', out.height="300px", fig.cap='Deforestation in Paraguay 2000-2012'}
    knitr::include_graphics('https://www.moore.org/images/default-source/grants/other-grant-images/.gif?sfvrsn=32ed920d_2')
 ```
 
@@ -187,7 +187,7 @@ Earth Engine Objects:
 <div class='right' style='float:right;width:48%'>
 
 
-```{r, echo=FALSE, fig.align='center', out.width="600px",fig.cap='6-Band Image'}
+```{r, echo=FALSE, fig.align='center', out.height="400px",out.width="200px",fig.cap='6-Band Image'}
    knitr::include_graphics('./Bands.png')
 ```
 </div>
@@ -312,10 +312,11 @@ Environments for running the EE Python API:
    * This is how I've been using so far - good for running EE API conda on local computer, simple install
    
 - [Google Colab](https://colab.research.google.com/notebooks/welcome.ipynb#recent=true)
-   * hosted notebook environment (in the cloud), easy to install EE API and run Python code right away
+   * hosted jupyter notebook environment (in the cloud), easy to install EE API and run Python code right away
    * For those used to Jupyter Notebooks, this is a hosted Jupyter Notebook that integrates Google Drive and GitHub
    
-- [JupyterLab]
+- [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/)
+   * Next generation of Jupyter notebooks - full featured lab environment allowing multiple documents, terminals, editors in a dashboard environment
 
 ## Python API
 
