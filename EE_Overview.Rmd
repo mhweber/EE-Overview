@@ -249,17 +249,17 @@ What do we do with collections?
 
 Filtering
 
-- [Filtering A FeatureCollection using metadata](https://code.earthengine.google.com/17a1342fdadf5c776508107f5b73dcb0) 
+- [Filtering A FeatureCollection using metadata](https://code.earthengine.google.com/199035313c5e616d21453207772cdc76) 
 
-- [Filting An ImageCollection using space and time](https://code.earthengine.google.com/e0ee9b72f6656305784fb549629f5e9d)
+- [Filting An ImageCollection using space and time](https://code.earthengine.google.com/904e4eafe9e3664d9894db1b1a9a932a)
 
 ## Earth Engine Programming
 
 Mapping
 
-- [Map a function over a FeatureCollection](https://code.earthengine.google.com/d952902a63ecd14cf78c77a92ea56df5) 
+- [Map a function over a FeatureCollection](https://code.earthengine.google.com/c08cecddbdc3939c8c2f8213ecafe4b5) 
 
-- [Map a function over an ImageCollection](https://code.earthengine.google.com/2e337839e43962c31fe50da0d8000d2f)
+- [Map a function over an ImageCollection](https://code.earthengine.google.com/e432322ba4469bccb767e9f54fcb6aa2)
 
 ## Earth Engine Programming
 Reducers
@@ -271,9 +271,9 @@ Reducers
 ## Earth Engine Programming
 Compositing and Mosaicking
 
-- [Composite NAIP images over time](https://code.earthengine.google.com/f3ab6c759f996eed25f9b2e88ebcb7d5)
+- [Composite NAIP images over time](https://code.earthengine.google.com/0f9ede74f609198dc5496400cceb0eb9)
 
-- [Mosaicking NAIP images](https://code.earthengine.google.com/ddb18b15939898968e60e3fa4bcd6f62)
+- [Mosaicking NAIP images](https://code.earthengine.google.com/86d5bd391a5e72f9a74461895a115c52)
 
 
 ## Earth Engine Programming
