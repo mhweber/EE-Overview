@@ -367,6 +367,8 @@ Treasure trove of documentation and examples in the [Developer's Guide](https://
    * Allows you to analyze massive vector GIS data and attribute data via SQL in Google Big Query
    
 - [TensorFlow Object Model](https://developers.google.com/earth-engine/tensorflow)
+   * Tensorflow models are developed and trained outside of EE, but there is now an ee.Model package for handling interaction with Tensorflow
+   * Methods for exporting training and testing data in TFRecord format and importing / exporting imagery in TFRecord format.
 
 - [Early Access Rest API](https://docs.google.com/presentation/d/1vQynmRLKwE8o2DTVa5CuiyCyDNZul_w0dQP9M1IF6Mw/edit#slide=id.g5d4a909b46_1_18)
    * EE computation and use the EE catalog from any language via an HTTP API - have to request to be whitelisted
