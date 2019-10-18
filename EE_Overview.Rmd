@@ -58,7 +58,7 @@ Groelick et al. (2017) in ['Google Earth Engine: Planetory-scale geospatial anal
 Motivating Case Studies:
 
 - [Global Forest Watch](http://www.globalforestwatch.org/)
-Online platform to interactively show forest gain / loss at global scale
+Online platform to interactively show forest gain / loss at global scale at 30 meter resolution from 2000-2014
    + [Hansen et al (2013) Paper in Science](http://science.sciencemag.org/content/342/6160/850)
    + [GEE tutorial using the Hansen data](https://developers.google.com/earth-engine/tutorial_forest_01)
    
